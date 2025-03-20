@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "f_name": "Muhammdrasul",
+      "l_name": "Gulomjonov",
+      "profession": "Developer",
+      "age": 20,
+      "gender": "Male"
+    }
+  ]
+}
