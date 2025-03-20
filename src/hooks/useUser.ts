@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { User } from "../types/user";
+import { FormUser, User } from "../types/user";
 
 export const useUser = () => {
   const [users, setUsers] = useState<User[]>([]);
@@ -41,7 +41,7 @@ export const useUser = () => {
     }
   };
 
-  const updateUser = async (id: number, user: User) => {
+  const updateUser = async (id: number, user: FormUser): Promise<void> => {
     try {
       await axios.put(`http://localhost:3000/users/${id}`, user);
       fetchUsers();
