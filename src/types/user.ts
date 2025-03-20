@@ -8,6 +8,7 @@ export type User = {
 };
 
 export type FormUser = {
+  id?: number;
   f_name: string;
   l_name: string;
   profession: string;
